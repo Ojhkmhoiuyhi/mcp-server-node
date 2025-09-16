@@ -1,0 +1,24 @@
+args:
+- node
+- "./mcp-server.js"
+command: npx
+config_schema:
+  properties:
+    api_key:
+      description: API_KEY environment variable
+      type: string
+  required:
+  - API_KEY
+  type: object
+description: MCP Server implemented in JavaScript using Node.js that demonstrates
+  how to build an MCP server with a custom prompt and custom tools, including one
+  that loads an environment variable from a configuration file, to integrate seamlessly
+  with AI-assisted environments like Cursor IDE.
+env:
+- name: API_KEY
+  value: config.api_key
+license: MIT License
+owner: lucianoayres
+package: mcp-server-node
+server_name: mcp-server-node
+vendor: Cprime
